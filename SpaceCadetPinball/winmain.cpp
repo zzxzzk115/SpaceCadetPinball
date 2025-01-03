@@ -159,7 +159,7 @@ int winmain::WinMain(LPCSTR lpCmdLine)
 		ImGui::CreateContext();
 		ImGuiIO& io = ImGui::GetIO();
 		ImIO = &io;
-		auto iniPath = std::string(prefPath) + "imgui_pb.ini";
+		auto iniPath = std::string(basePath) + "imgui_pb.ini";
 		io.IniFilename = iniPath.c_str();
 
 		// First option initialization step: just load settings from .ini. Needs ImGui context.
